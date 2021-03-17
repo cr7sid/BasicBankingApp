@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Basic Banking App</string>
+    <string name="app_short_name">Banking App</string>
+    <string name="view">View customers</string>
+    <string name="customer_list_head">Bank Customers</string>
+    <string name="customer_details_head">Customer Details</string>
+    <string name="customer_name">Name</string>
+    <string name="email">Email</string>
+    <string name="account_details">Account Details</string>
+    <string name="account_number">Account Number:</string>
+    <string name="bankName">Bank Name:</string>
+    <string name="ifsc_code">IFSC Code:</string>
+    <string name="account_balance">Account Balance:</string>
+    <string name="send_amount">Enter the amount to send</string>
+    <string name="btn_add_money">Add money</string>
+    <string name="select_user">Select User</string>
+    <string name="select_a_user">Select a user</string>
+    <string name="successful">Transaction Successful</string>
+    <string name="transactions_heading">All Transactions</string>
+    <string name="no_transactions">No transactions yet!</string>
+    <string name="fromuser">FromName</string>
+    <string name="touser">ToName</string>
+    <string name="dateOfTransaction">25/09/2001</string>
+    <string name="transactAmount">20000</string>
+    <string name="tID">1234567</string>
+</resources>

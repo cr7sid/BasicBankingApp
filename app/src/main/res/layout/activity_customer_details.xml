@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme">
+
+    <TextView
+        android:id="@+id/userDetHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/customer_details_head"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userDetHeading"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round_list"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAddMoney"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etSendMoney"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/buttonDivider"
+            android:background="@drawable/btn_details_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/btn_add_money"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSelectUser"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etSendMoney"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/buttonDivider"
+            android:background="@drawable/btn_details_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/select_user"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSendMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAccBal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/send_amount"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvCustomerImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/customer_image"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_toEndOf="@id/tvCustomerImage"
+            android:layout_toRightOf="@id/tvCustomerImage"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto"
+            android:text="@string/customer_name"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCustomerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCustomerName"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/tvCustomerImage"
+            android:fontFamily="@font/roboto"
+            android:text="@string/email"
+            android:textColor="#5C5C5C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/AccDetailsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCustomerImage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/account_details"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAccNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AccDetailsHeading"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/account_number"
+            android:textColor="#5C5C5C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAccNum"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/bankName"
+            android:textColor="#5C5C5C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvIfscCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBankName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/ifsc_code"
+            android:textColor="#5C5C5C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAccBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvIfscCode"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/account_balance"
+            android:textColor="#5C5C5C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/buttonDivider"
+            android:layout_width="1dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:id="@+id/detailsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tvCustomerImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/AccDetailsHeading"
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+</RelativeLayout>
