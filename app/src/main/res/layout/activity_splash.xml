@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_theme"
+    android:background="#448AFF"
     tools:context=".SplashActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -12,9 +12,9 @@
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_marginBottom="219dp"
+        app:civ_border_width="3dp"
+        app:civ_circle_background_color="#fdbcb4"
         android:src="@drawable/ic_mobile_banking"
-        app:civ_border_width="2dp"
-        app:civ_border_color="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,8 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
+        android:fontFamily="@font/clicker_script"
         android:text="@string/app_short_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
